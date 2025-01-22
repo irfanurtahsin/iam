@@ -100,7 +100,7 @@ body {
 /* Extra Small Devices (Phones under 375px width) */
 @media (max-width: 375px) {
     .title {
-        top: 45%;
+        top: 65%;
     }
     .title h4 {
         font-size: 14px;
@@ -111,7 +111,7 @@ body {
     }
 
     .contacts {
-        gap: 30px;
+        gap: 90px;
         bottom: 40px;
     }
 
@@ -131,7 +131,7 @@ body {
     }
 
     .contacts {
-        gap: 40px;
+        gap: 100px;
         bottom: 50px;
     }
 
@@ -151,7 +151,7 @@ body {
     }
 
     .contacts {
-        gap: 50px;
+        gap: 100px;
         bottom: 60px;
     }
 
@@ -163,7 +163,7 @@ body {
 /* Large Devices (Laptops 992px and below) */
 @media (max-width: 992px) {
     .title {
-        top: 65%;
+        top: 60%;
     }
 
     .title h2 {
@@ -171,7 +171,7 @@ body {
     }
 
     .contacts {
-        gap: 60px;
+        gap: 100px;
         bottom: 80px;
     }
 
@@ -187,7 +187,7 @@ body {
     }
 
     .contacts {
-        gap: 80px;
+        gap: 100px;
         bottom: 100px;
     }
 
