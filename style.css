@@ -12,22 +12,25 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
 
 body {
     background-color: var(--dark-blue);
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .cover-pic {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 80vh; /* Reduce height to avoid scrolling */
     background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(38, 70, 83, 1)), 
-        url('/assets/allu.jpg');
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(38, 70, 83, 1));
     background-size: cover;
     background-position: center;
     display: flex;
@@ -38,25 +41,19 @@ body {
 }
 
 .title {
-    margin-top: 200px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    color: var(--mustard);
 }
 
 .title h4 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
-    color: var(--mustard);
-    margin-bottom: -10px;
-    text-align: left;
+    margin-bottom: 5px;
 }
 
 .title h2 {
     font-size: 38px;
     font-weight: 700;
-    color: var(--mustard);
-    margin-top: 0;
 }
 
 .title h2 span {
@@ -66,8 +63,8 @@ body {
 .contacts {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin-top: 5px;
+    gap: 50px;
+    margin-top: 30px;
 }
 
 .contacts div {
@@ -79,9 +76,19 @@ body {
     color: var(--mustard);
     font-size: 18px;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-dotlottie-player {
-    width: 80px;
-    height: 80px;
+.about-card {
+    color: var(--mustard);
+    border: 1px solid var(--teal);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 700px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
