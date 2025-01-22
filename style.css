@@ -95,71 +95,103 @@ body {
     align-items: center;
 }
 
-@keyframes borderAnimation {
-    0% {
-        border-color: var(--teal);
-        box-shadow: 0 0 10px rgba(42, 157, 143, 0.5);
+/* Responsive Design for Each Device */
+
+/* Extra Small Devices (Phones under 375px width) */
+@media (max-width: 375px) {
+    .title {
+        top: 45%;
     }
-    50% {
-        border-color: var(--burnt-orange);
-        box-shadow: 0 0 20px rgba(231, 111, 81, 0.6);
+    .title h4 {
+        font-size: 14px;
     }
-    100% {
-        border-color: var(--teal);
-        box-shadow: 0 0 10px rgba(42, 157, 143, 0.5);
-    }
-}
 
-.about-card {
-    color: var(--mustard);
-    border: 1px solid var(--teal);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    margin-top: 100px;
-    max-width: 700px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    animation: borderAnimation 4s infinite ease-in-out;
-}
-
-.about-card h4 {
-    color: var(--burnt-orange);
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.about-card p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .cover-pic {
-        height: 100vh;
+    .title h2 {
+        font-size: 24px;
     }
 
     .contacts {
-        flex-direction: row;
-        justify-content: inherit;
-        /* gap: 80px; */
-        bottom: 20px; /* Ensure it moves up on all screen sizes */
+        gap: 30px;
+        bottom: 40px;
     }
 
+    .contacts a {
+        font-size: 14px;
+    }
+}
+
+/* Small Devices (Phones 576px and below) */
+@media (max-width: 576px) {
     .title {
-        top: 65%;
+        top: 45%;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .contacts {
+        gap: 40px;
+        bottom: 50px;
+    }
+
+    .contacts a {
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices (Tablets 768px and below) */
+@media (max-width: 768px) {
+    .title {
+        top: 42%;
     }
 
     .title h2 {
         font-size: 32px;
     }
 
-    .title h4 {
-        font-size: 16px;
-    }
     .contacts {
-        gap: 100px;
-        bottom: 120px; /* Keep consistent across all screen sizes */
+        gap: 50px;
+        bottom: 60px;
+    }
+
+    .contacts a {
+        font-size: 18px;
+    }
+}
+
+/* Large Devices (Laptops 992px and below) */
+@media (max-width: 992px) {
+    .title {
+        top: 65%;
+    }
+
+    .title h2 {
+        font-size: 36px;
+    }
+
+    .contacts {
+        gap: 60px;
+        bottom: 80px;
+    }
+
+    .contacts a {
+        font-size: 20px;
+    }
+}
+
+/* Extra Large Devices (Desktops 1200px and above) */
+@media (min-width: 1200px) {
+    .title h2 {
+        font-size: 48px;
+    }
+
+    .contacts {
+        gap: 80px;
+        bottom: 100px;
+    }
+
+    .contacts a {
+        font-size: 22px;
     }
 }
