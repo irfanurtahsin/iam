@@ -28,7 +28,7 @@ body {
 .cover-pic {
     position: relative;
     width: 100%;
-    height: 80vh; /* Reduce height to avoid scrolling */
+    height: 100vh; /* Reduce height to avoid scrolling */
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(38, 70, 83, 1));
     background-size: cover;
@@ -83,14 +83,41 @@ body {
     align-items: center;
 }
 
+@keyframes borderAnimation {
+    0% {
+        border-color: var(--teal);
+        box-shadow: 0 0 10px rgba(42, 157, 143, 0.5);
+    }
+    50% {
+        border-color: var(--burnt-orange);
+        box-shadow: 0 0 20px rgba(231, 111, 81, 0.6);
+    }
+    100% {
+        border-color: var(--teal);
+        box-shadow: 0 0 10px rgba(42, 157, 143, 0.5);
+    }
+}
+
 .about-card {
     color: var(--mustard);
-    border: 1px solid var(--teal);
-    border-radius: 5px;
+    border: 2px solid var(--teal);
+    border-radius: 10px;
     margin: 20px;
     padding: 20px;
     margin-top: 100px;
     max-width: 700px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
+    animation: borderAnimation 4s infinite ease-in-out;
+}
+
+.about-card h4 {
+    color: var(--burnt-orange);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.6;
 }
