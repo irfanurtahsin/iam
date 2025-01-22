@@ -101,7 +101,7 @@ body {
 
 .about-card {
     color: var(--mustard);
-    border: 2px solid var(--teal);
+    border: 1px solid var(--teal);
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
@@ -121,4 +121,32 @@ body {
 .about-card p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .cover-pic {
+        height: 100vh; /* Full viewport height */
+    }
+
+    .contacts {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .about-card {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .title {
+        margin-top: 150px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .title h4 {
+        font-size: 14px;
+    }
 }
